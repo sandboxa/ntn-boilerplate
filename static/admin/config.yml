@@ -101,11 +101,11 @@ collections:
         media_library:
             config:
               default_transformations:
-                - fetch_format: auto
-                  width: 300    
-                  quality: auto
-                  crop: fill
-                  effect: grayscale
+                - - fetch_format: auto
+                    width: 300    
+                    quality: auto
+                    crop: fill
+                    effect: grayscale
       - label: Content
         name: body
         widget: markdown
@@ -122,8 +122,8 @@ collections:
           media_library:
             config:
               default_transformations:
-                - fetch_format: auto
-                  width: 300    
-                  quality: auto
-                  crop: fill
-                  effect: grayscale
+                - - fetch_format: auto
+                    width: 300    
+                    quality: auto
+                    crop: fill
+                    effect: grayscale
