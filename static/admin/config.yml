@@ -89,17 +89,19 @@ collections:
           widget: 'list',
           required: false,
           summary: '{{fields.image}}',
-          field: { 
-            label: 'Image', 
-            name: 'image', 
-            widget: 'image', 
-            media_library:
-              config:
+          field: {
+            label: 'Image',
+            name: 'image',
+            widget: 'image',
+            media_library: {
+              config: {
                 default_transformations:
-                  - fetch_format: auto
-                    width: 300    
-                    quality: auto
-                    crop: fill
-                    effect: grayscale
+                  - fetch_format: auto,
+                    width: 300,
+                    quality: auto,
+                    crop: fill,
+                    effect: grayscale,
+              }
+            }
           },
         }
