@@ -81,7 +81,20 @@ collections:
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
+      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false, media_library: {
+      		config: { 
+            	default_transformations: [
+                  {
+                    fetch_format: auto,
+                    width: 300,
+                    quality: auto,
+                    crop: fill,
+                    effect: grayscale
+                  }
+                ]
+              }
+            } 
+          }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }
       - {
           label: 'Gallery',
@@ -96,11 +109,13 @@ collections:
             media_library: {
               config: {
                 default_transformations: [
-                  fetch_format: auto,
-                  width: 300,
-                  quality: auto,
-                  crop: fill,
-                  effect: grayscale,
+                  {
+                    fetch_format: auto,
+                    width: 300,
+                    quality: auto,
+                    crop: fill,
+                    effect: grayscale,
+                  }
                 ]
               }
             }
