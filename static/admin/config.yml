@@ -98,6 +98,14 @@ collections:
         widget: image
         required: false
         allow_multiple: false
+        media_library:
+            config:
+              default_transformations:
+                - fetch_format: auto
+                  width: 300    
+                  quality: auto
+                  crop: fill
+                  effect: grayscale
       - label: Content
         name: body
         widget: markdown
