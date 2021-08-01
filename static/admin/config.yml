@@ -95,13 +95,13 @@ collections:
             widget: 'image',
             media_library: {
               config: {
-                default_transformations: {
+                default_transformations: [
                   fetch_format: auto,
                   width: 300,
                   quality: auto,
                   crop: fill,
                   effect: grayscale,
-                }
+                ]
               }
             }
           },
