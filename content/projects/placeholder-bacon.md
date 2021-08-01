@@ -2,7 +2,7 @@
 category: food
 title: Placeholder Bacon
 description: What is life without bacon?
-cover: https://res.cloudinary.com/sandboxa/image/upload/c_scale,f_auto,q_auto,w_400/v1627794680/213A_gqceei.jpg
+cover: https://res.cloudinary.com/sandboxa/image/upload/c_fill,e_grayscale,f_auto,q_auto,w_300/v1627792094/samples/food/spices.jpg
 gallery:
   - https://baconmockup.com/600/300
   - https://baconmockup.com/600/600
