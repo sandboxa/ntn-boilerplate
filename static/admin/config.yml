@@ -1,5 +1,5 @@
-site_url: https://ntn-boilerplate.netlify.app/
-logo_url: https://ntn-boilerplate.netlify.app/icon.png
+site_url: https://quirky-brahmagupta-74888c.netlify.app/
+logo_url: https://quirky-brahmagupta-74888c.netlify.app/icon.png
 
 publish_mode: editorial_workflow
 backend:
@@ -12,6 +12,17 @@ local_backend: true
 
 media_folder: static/img
 public_folder: /img
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: sandboxa
+    api_key: 362145312293858
+    default_transformations:
+      - - fetch_format: auto
+          width: 400
+          quality: auto
+          crop: scale
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
@@ -78,5 +89,17 @@ collections:
           widget: 'list',
           required: false,
           summary: '{{fields.image}}',
-          field: { label: 'Image', name: 'image', widget: 'image' },
+          field: { 
+            label: 'Image', 
+            name: 'image', 
+            widget: 'image', 
+            media_library:
+              config:
+                default_transformations:
+                  - fetch_format: auto
+                    width: 300    
+                    quality: auto
+                    crop: fill
+                    effect: grayscale
+          },
         }
