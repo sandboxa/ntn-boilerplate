@@ -1,6 +1,6 @@
 site_url: 'https://quirky-brahmagupta-74888c.netlify.app/'
 logo_url: 'https://quirky-brahmagupta-74888c.netlify.app/icon.png'
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 backend:
   name: git-gateway
   branch: master
