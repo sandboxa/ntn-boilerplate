@@ -1,6 +1,6 @@
 ---
 category: animals
-title: Fill Murrays!
+title: Fill M
 description: Yet another placeholding project, but with Bills
 cover: https://res.cloudinary.com/sandboxa/image/upload/c_fill,e_grayscale,f_auto,q_auto,w_300/v1628180086/213A_da0qvp.jpg
 gallery:
