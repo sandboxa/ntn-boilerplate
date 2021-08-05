@@ -15,14 +15,14 @@
         <h1 class="">{{ post.title }}</h1>
         <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.description }}</p>
         <nuxt-content :document="post" />
-        <div v-if="post.gallery" class="nuxt-content">
-          <img
+        <ul v-if="post.gallery" class="nuxt-content">
+          <li><img
             v-for="image in post.gallery"
             class="image"
             :key="image.id"
             :src="image"
-          >
-        </div>
+          ></li>
+        </ul>
       </article>
     </section>
   </main>
