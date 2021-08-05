@@ -12,6 +12,9 @@ media_library:
   name: uploadcare
   config:
     publicKey: be1f0748fb3a5d9422c3
+  settings:
+    autoFilename: true
+    defaultOperations: '/resize/400x/'
 # media_library:
 #   name: cloudinary
 #   config:
