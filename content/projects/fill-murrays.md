@@ -1,10 +1,9 @@
 ---
 category: animals
-title: Fill Murrays
+title: Fill Murrays!
 description: Yet another placeholding project, but with Bills
-cover: https://www.fillmurray.com/g/400/200
+cover: https://res.cloudinary.com/sandboxa/image/upload/c_fill,e_grayscale,f_auto,q_auto,w_300/v1628180086/213A_da0qvp.jpg
 gallery:
-  - /img/213a.jpg
   - https://www.fillmurray.com/g/800/400
   - https://www.fillmurray.com/600/600
 ---
@@ -14,6 +13,4 @@ If you are in local development-mode (`npm run dev`) you can double-click here t
 
 Below are some Gallery photos that have been added to this Project.
 
-
-
-![My Alt](/img/ntn-boilerplate-preview-light.png)
+![My Alt](https://res.cloudinary.com/sandboxa/image/upload/c_scale,f_auto,q_auto,w_400/v1627792094/samples/cloudinary-group.jpg)
