@@ -9,15 +9,19 @@ local_backend: true
 media_folder: static/img
 public_folder: /img
 media_library:
-  name: cloudinary
+  name: uploadcare
   config:
-    cloud_name: sandboxa
-    api_key: 362145312293858
-    default_transformations:
-      - - fetch_format: auto
-          width: 400
-          quality: auto
-          crop: scale
+    publicKey: be1f0748fb3a5d9422c3
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: sandboxa
+#     api_key: 362145312293858
+#     default_transformations:
+#       - - fetch_format: auto
+#           width: 400
+#           quality: auto
+#           crop: scale
 collections:
   - label: Site settings
     name: site
